@@ -21,6 +21,12 @@ export const Container = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 760px){
+    svg{
+      opacity: 1;
+    }
+  }
 `;
 
 export const Title = styled.p`
@@ -65,16 +71,18 @@ export const ArrowLeft = styled(ChevronBack)`
   overflow: hidden;
 
   width: 40px;
-  height: 90%;
+  height: 80%;
 
   z-index: 3;
   left: 0;
+  margin-top: 12px;
 
   background: rgba(0, 0, 0, 0.2);
   color: var(--white);
   opacity: 0;
 
   transition: all ease 0.3s;
+
 `;
 
 export const ArrowRight = styled(ChevronForward)`
@@ -84,14 +92,17 @@ export const ArrowRight = styled(ChevronForward)`
   overflow: hidden;
 
   width: 40px;
-  height: 90%;
+  height: 80%;
 
   z-index: 3;
   right: 0;
+  margin-top: 12px;
 
   background: rgba(0, 0, 0, 0.2);
   color: var(--white);
   opacity: 0;
 
   transition: all ease 0.3s;
+
+  
 `;
