@@ -6,7 +6,8 @@ export const Container = styled.div`
 
   width: 76px;
   height: 100vh;
-
+  position: fixed;
+  
   background: var(--hardBlue);
   box-shadow: 2px 0px 2px 2px rgba(255, 255, 255, 0.02);
 `;

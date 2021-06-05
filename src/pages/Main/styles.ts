@@ -9,4 +9,7 @@ export const Wrapper = styled.div`
 export const ColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  width: calc(100% - 76px);
+  overflow: auto;
 `;

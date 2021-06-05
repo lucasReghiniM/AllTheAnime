@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
+//service
+import { getAnime, getManga } from "../../service/contents"
+
+//components
 import { Wrapper, ColumnWrapper } from './styles';
 import SideBar from "../../components/SideBar"
 import Carousel from "../../components/Carousel"
-import { getAnime, getManga } from "../../service/contents"
+import Content from "../../components/Content"
+
 
 const Main = () => {
   const [anime, setAnime] = useState<any>([]);
@@ -44,7 +49,9 @@ const Main = () => {
 
   return (
     <Wrapper>
-      <SideBar />
+      <Content>
+        <SideBar /> 
+      </Content>
       <ColumnWrapper>
         {anime && (
           <Carousel data={anime} title={"Animes"}/>

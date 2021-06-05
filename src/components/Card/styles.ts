@@ -11,8 +11,11 @@ export const Container = styled.div`
 export const Img = styled.img`
   width: 100%;
   height: 200px;
+
   background: red;
   border-radius: 5px 5px 0px 0px;
+
+  cursor: pointer;
 `;
 
 export const StarIcon = styled(Star)`
