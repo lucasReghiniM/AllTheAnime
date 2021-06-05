@@ -1,4 +1,4 @@
-# ALL THE ANIMES
+# ALL THE ANIME
 
 Site de listagem de animes puxando de uma API. Utilizando metods de UI e UX.
 
