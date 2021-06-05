@@ -9,6 +9,7 @@ import SideBar from "../../components/SideBar"
 import Carousel from "../../components/Carousel"
 import Content from "../../components/Content"
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 const Main = () => {
   const [anime, setAnime] = useState<any>([]);
@@ -66,7 +67,7 @@ const Main = () => {
             <Loader src={"https://lh4.googleusercontent.com/proxy/u4zxneoolqdlg0vZ689_oJevh0p0giXY3_nOCDhtHLAFtqsmC5sDsFEWWHQ0DZutCsDriyAXZp3e40grA6KBDS2X_h1V_d3JEZa25ZP-wwOTFYpNB5ijbbNSITNqRS-TmoyGj51r1q7m4lt6nHglKOGMK94Bna86S8KQxJbi6Ne15agvfmrZ=s0-d"}/>
           </LoaderOverlay>
         )}
-        
+        {anime.length != 0 && manga.length != 0 && <Footer />}
       </ColumnWrapper>
     </Wrapper>
   );
