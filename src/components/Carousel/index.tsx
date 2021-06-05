@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Container, Title, SliderRow, ListRow, Item } from './styles';
+//components
+import { Container, Title, SliderRow, ListRow, Item, ArrowLeft, ArrowRight } from './styles';
 import Card from "../Card/index"
 
 interface DataProps {
@@ -9,12 +10,37 @@ interface DataProps {
 }
 
 const Carousel = ({ data, title }: DataProps) => {
-  console.log("data =>", data)
+  const[scrollX, setScrollX] = useState<any>(-800)
+
+  const handleLeftArrow = () => {
+    let x = scrollX + Math.round(window.innerWidth / 2)
+
+    if(x > 0){
+      x = 0
+    }
+
+    setScrollX(x)
+  }
+
+  const handleRightArrow = () => {
+    let x = scrollX - Math.round(window.innerWidth / 2)
+    let width = data.length * 290
+
+    if((window.innerWidth - width) > x){
+      x = (window.innerWidth - width) - 60
+    }
+
+    setScrollX(x)
+  }
+
   return (
     <Container>
       <Title>{title}</Title>
+      <ArrowLeft onClick={handleLeftArrow} />
+      <ArrowRight onClick={handleRightArrow} />
+
       <SliderRow>
-        <ListRow>
+        <ListRow width={(data.length * 290)+"px"} marginLeft={scrollX+"px"}>
           {data && data.map((item: any) => {
             return (
               <Item key={item.id} >

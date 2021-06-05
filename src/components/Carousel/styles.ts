@@ -1,8 +1,26 @@
 import styled from 'styled-components';
+import { ChevronBack, ChevronForward } from '../../styles/Icons' 
+
+interface StyleProps{
+  marginLeft?: string,
+  width?: any
+}
 
 export const Container = styled.div`
 //movieRow
   margin-bottom: 30px;
+  position: relative;
+
+  svg{
+    position: absolute;
+    cursor: pointer;
+  } 
+
+  :hover{
+    svg{
+      opacity: 1;
+    }
+  }
 `;
 
 export const Title = styled.p`
@@ -15,11 +33,15 @@ export const SliderRow = styled.div`
 //list area
   overflow-x: hidden;
   padding-left: 40px;
+
 `;
 
-export const ListRow = styled.div`
+export const ListRow = styled.div<StyleProps>`
 //list
-  width: 9999px;
+  width: ${p => p.width || "999999px"};
+  margin-left: ${p => p.marginLeft};
+
+  transition: all ease 0.5s;
 `;
 
 export const Item = styled.div`
@@ -30,4 +52,46 @@ export const Item = styled.div`
   :hover{
     transform: scale(1);
   }
+
+  svg{
+    position: relative;
+  }
+`;
+
+export const ArrowLeft = styled(ChevronBack)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  width: 40px;
+  height: 90%;
+
+  z-index: 3;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  opacity: 0;
+
+  transition: all ease 0.3s;
+`;
+
+export const ArrowRight = styled(ChevronForward)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  width: 40px;
+  height: 90%;
+
+  z-index: 3;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  opacity: 0;
+
+  transition: all ease 0.3s;
 `;

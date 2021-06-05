@@ -1,1 +1,1 @@
-export { Home, Play, Star, People, ChatbubbleEllipses } from "@styled-icons/ionicons-outline/"
+export { Home, Play, Star, People, ChatbubbleEllipses, ChevronBack, ChevronForward } from "@styled-icons/ionicons-outline/"
