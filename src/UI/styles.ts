@@ -1,26 +1,9 @@
 import styled from 'styled-components';
-import {StyledIconBase} from '@styled-icons/styled-icon'
+import { StyledIconBase } from '@styled-icons/styled-icon'
+import { StylesProps } from "../types"
 
-interface Props {
-  font?: any;
-  color?: any;
-  width?: any;
-  height?: any;
-  margin?: any;
-  background?: any;
-  radius?: any;
-  position?: any;
-  align?: any;
-  justify?: any;
-  zIndex?: any;
-  tAlign?: any;
-  custom?: any;
-  maxWidth?: any;
-  maxHeight?: any;
 
-}
-
-export const IconStyleWrapper = styled.div<Props>`
+export const IconStyleWrapper = styled.div<StylesProps>`
   ${StyledIconBase} {
     color: ${p => p.color};
     width: ${p => p.width};
@@ -30,7 +13,7 @@ export const IconStyleWrapper = styled.div<Props>`
   }
 `
 
-export const Text = styled.p<Props>`
+export const Text = styled.p<StylesProps>`
   width: ${p => p.width};
   height: ${p => p.height};
   font: ${p => p.font || ""};
@@ -44,7 +27,7 @@ export const Text = styled.p<Props>`
   ${p => p.custom}
 `;
 
-export const Row = styled.div<Props>`
+export const Row = styled.div<StylesProps>`
   display: flex;
   align-items: center;
   justify-content: ${p => p.justify};
@@ -63,7 +46,7 @@ export const Row = styled.div<Props>`
 
 `;
 
-export const Column = styled.div<Props>`
+export const Column = styled.div<StylesProps>`
   display: flex;
   flex-direction: column;
   align-items: ${p => p.align || "center"};

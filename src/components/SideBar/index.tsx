@@ -1,5 +1,6 @@
 import React from 'react';
 
+//components
 import { Container, HomeIcon, PlayIcon, ChatIcon, GroupIcon } from './styles';
 import { Row } from '../../UI/styles'
 

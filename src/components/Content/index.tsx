@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Container } from './styles';
+//types
+import { LayoutProps } from "../../types"
 
-export interface LayoutProps  { 
-  children: React.ReactNode
-}
+//components
+import { Container } from './styles';
 
 const Content = (props: LayoutProps) => {
   return (

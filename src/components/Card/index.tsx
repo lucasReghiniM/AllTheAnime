@@ -1,16 +1,12 @@
 import React from 'react';
 
+//types
+import { CardProps } from "../../types"
+
+//components
 import { Container, Img, StarIcon } from './styles';
 import { Text, Column, Row } from "../../UI/styles"
-import FullMetalBanner from "../../assets/fullMetalBanner.jpg"
 
-interface CardProps {
-  title: string,
-  description: string,
-  rate: string,
-  thumbnail: any
-
-}
 
 const Card = ({title, description, rate, thumbnail}: CardProps) => {
 
@@ -22,7 +18,7 @@ const Card = ({title, description, rate, thumbnail}: CardProps) => {
 
   return (
     <Container>
-      <Img src={thumbnail}/>
+      <Img src={thumbnail} alt={title} />
       <Text margin="16px 0 8px 0" color="var(--white)" font="700 18px/23px Roboto" title={title} custom="width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
         {title}
       </Text>

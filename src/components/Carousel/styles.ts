@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import { ChevronBack, ChevronForward } from '../../styles/Icons' 
-
-interface StyleProps{
-  marginLeft?: string,
-  width?: any
-}
+import { StylesProps } from "../../types"
 
 export const Container = styled.div`
 //movieRow
@@ -42,7 +38,7 @@ export const SliderRow = styled.div`
 
 `;
 
-export const ListRow = styled.div<StyleProps>`
+export const ListRow = styled.div<StylesProps>`
 //list
   width: ${p => p.width || "999999px"};
   margin-left: ${p => p.marginLeft};

@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
+//types
+import { CarouselDataProps } from "../../types"
+
 //components
 import { Container, Title, SliderRow, ListRow, Item, ArrowLeft, ArrowRight } from './styles';
 import Card from "../Card/index"
 
-interface DataProps {
-  data: any,
-  title: string
-}
 
-const Carousel = ({ data, title }: DataProps) => {
+const Carousel = ({ data, title }: CarouselDataProps) => {
   const[scrollX, setScrollX] = useState<any>(0)
 
   const handleLeftArrow = () => {
