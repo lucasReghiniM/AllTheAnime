@@ -8,7 +8,7 @@ Primeiro clone o repositorio com
 
 ### `git clone`
 
-Clone o repositorio com git
+Clone o repositorio com git.
 
 ### `npm i`
 
@@ -16,7 +16,7 @@ Este comando irá instalar todas as dependencias do projeto.
 
 ### `npm start`
 
-Ao realizar este comando a aplicação sera aberta em [http://localhost:3000](http://localhost:3000) caso ela não esteja em uso
+Ao realizar este comando a aplicação sera aberta em [http://localhost:3000](http://localhost:3000) caso ela não esteja em uso.
 
 
 

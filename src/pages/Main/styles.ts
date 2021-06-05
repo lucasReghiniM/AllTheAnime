@@ -12,6 +12,10 @@ export const ColumnWrapper = styled.div`
 
   width: calc(100% - 76px);
   overflow: auto;
+
+  @media (max-width: 760px){
+    width: 100%;
+  }
 `;
 
 export const LoaderOverlay = styled.div`

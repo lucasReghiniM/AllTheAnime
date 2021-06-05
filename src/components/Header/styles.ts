@@ -11,6 +11,10 @@ export const Container = styled.div`
   padding: 24px;
   margin-bottom: 24px;
   background: transparent;
+
+  @media (max-width: 760px){
+    justify-content: center;
+  }
 `;
 
 export const Logo = styled.img`
@@ -20,6 +24,10 @@ export const Logo = styled.img`
   margin-right: 40px;
 
   cursor: pointer;
+
+  @media (max-width: 760px){
+    margin-right: 0;
+  }
 `;
 
 export const Text = styled.p`
@@ -34,5 +42,9 @@ export const Text = styled.p`
 
   :hover{
     transform: scale(1);
+  }
+
+  @media (max-width: 760px){
+    display: none;
   }
 `;

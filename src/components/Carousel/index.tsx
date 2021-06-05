@@ -27,11 +27,12 @@ const Carousel = ({ data, title }: DataProps) => {
     let width = data.length * 290
 
     if((window.innerWidth - width) > x){
-      x = (window.innerWidth - width) - 60
+      x = (window.innerWidth - width) - 120
     }
 
     setScrollX(x)
   }
+
 
   return (
     <Container>

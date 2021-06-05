@@ -5,7 +5,7 @@ import LogoSvg from "../../assets/logo.svg"
 
 //components
 import { Container, Logo, Text } from './styles';
-
+import MenuBurguer from "../MenuBurguer/index"
 
 const Header = () => {
 
@@ -13,6 +13,7 @@ const Header = () => {
 
   return (
     <Container>
+      <MenuBurguer />
       <Logo src={LogoSvg}/>
       {headerOptions && headerOptions.map((item: any, index: any) => {
         return (

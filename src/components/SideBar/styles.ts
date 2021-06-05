@@ -18,6 +18,7 @@ export const Container = styled.div`
   svg{
     cursor: pointer;
   }
+
 `;
 
 export const HomeIcon = styled(Home)`

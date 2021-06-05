@@ -38,7 +38,7 @@ export const Title = styled.p`
 export const SliderRow = styled.div`
 //list area
   overflow-x: hidden;
-  padding-left: 40px;
+  padding-left: 30px;
 
 `;
 
