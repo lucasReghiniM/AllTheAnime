@@ -5,7 +5,7 @@ import { Container } from './styles';
 const SideBar = () => {
   return (
     <Container>
-      <h1>SideBar</h1>
+      a
     </Container>
   );
 };

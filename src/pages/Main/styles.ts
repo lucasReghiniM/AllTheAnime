@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+`;
 
+export const ColumnWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

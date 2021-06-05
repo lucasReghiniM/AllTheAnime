@@ -16,6 +16,7 @@ interface Props {
   tAlign?: any;
   custom?: any;
   maxWidth?: any;
+  maxHeight?: any;
 
 }
 
@@ -38,6 +39,7 @@ export const Text = styled.p<Props>`
   z-index: ${p => p.zIndex};
   text-align: ${p => p.tAlign};
   max-width: ${p => p.maxWidth};
+  max-height: ${p => p.maxHeight};
   transition: all ease 0.3s;
   ${p => p.custom}
 `;
@@ -46,6 +48,7 @@ export const Row = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: ${p => p.justify};
+  align-items: ${p => p.align};
 
   width: ${p => p.width};
   height: ${p => p.height};

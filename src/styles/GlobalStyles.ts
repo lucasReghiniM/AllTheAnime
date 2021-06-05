@@ -24,21 +24,16 @@ export default createGlobalStyle`
         background: var(--fundo);
     }
     :root {
-    --blue: #0174BB;
     --white: #FFFFFF;
     --black: #43423E;
     
-    --green: #00A94F;
-    --orange: #F6A74E;
-    --red: #EC3521;
+    --yellow: #FFE871;
 
-    --lightPurple: #E7E8F0;
-    --mediunPurple: #696781;
-    --hardPurple: #3D3C53;
+    --lightBlue: #797C87;
+    --hardBlue: #1E2530;
 
-    --gray: #808487;
-    --background: #FCFBF6;
-    --lightBlue: #F7FFFF;
+    --gray: #797C87;
+    --background: #272C38;
     
   }
 `;
