@@ -10,7 +10,7 @@ interface DataProps {
 }
 
 const Carousel = ({ data, title }: DataProps) => {
-  const[scrollX, setScrollX] = useState<any>(-800)
+  const[scrollX, setScrollX] = useState<any>(0)
 
   const handleLeftArrow = () => {
     let x = scrollX + Math.round(window.innerWidth / 2)

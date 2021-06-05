@@ -13,3 +13,20 @@ export const ColumnWrapper = styled.div`
   width: calc(100% - 76px);
   overflow: auto;
 `;
+
+export const LoaderOverlay = styled.div`
+  display: flex;
+
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+`;
+
+export const Loader = styled.img`
+  width: 300px;
+  height: auto;
+
+`;
